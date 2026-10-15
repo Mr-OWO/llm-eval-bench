@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-eval-bench"
+version = "0.1.0"
+description = "High-Throughput Async Evaluation & Regression Detection Framework for LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Wisdom Ogechi Owabor", email = "contact@wisdomowabor.online" }
+]
+dependencies = [
+    "pydantic>=2.5.0",
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "hypothesis>=6.90.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["src"]
