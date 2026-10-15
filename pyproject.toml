@@ -4,9 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "llm-eval-bench"
-version = "0.1.0"
+version = "1.0.0"
 description = "High-Throughput Async Evaluation & Regression Detection Framework for LLMs"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [
     { name = "Wisdom Ogechi Owabor", email = "contact@wisdomowabor.online" }

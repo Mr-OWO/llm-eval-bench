@@ -1,6 +1,6 @@
 """LLM Evaluation & Regression Detection Framework."""
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 from .models import (
     EvaluationCase,
@@ -17,6 +17,7 @@ from .metrics import (
 )
 from .judge import LLMJudge, JudgeConfig
 from .runner import EvalRunner
+from .benchmark_suite import BenchmarkSuite
 
 __all__ = [
     "EvaluationCase",
@@ -32,4 +33,5 @@ __all__ = [
     "LLMJudge",
     "JudgeConfig",
     "EvalRunner",
+    "BenchmarkSuite",
 ]

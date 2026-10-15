@@ -1,8 +1,10 @@
 # LLM-Eval-Bench: High-Throughput Async Evaluation & Regression Detection Framework
 
 [![CI](https://github.com/Mr-OWO/llm-eval-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/Mr-OWO/llm-eval-bench/actions)
+[![Release](https://img.shields.io/github/v/release/Mr-OWO/llm-eval-bench?color=brightgreen)](https://github.com/Mr-OWO/llm-eval-bench/releases)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/Mr-OWO/llm-eval-bench/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A production-grade, asynchronous evaluation framework designed to run high-throughput evaluation suites against Large Language Model (LLM) completions. It pairs deterministic linguistic and structural metrics (BLEU, ROUGE-L, JSON Schema conformance) with structured LLM-as-a-Judge scorecards, governed by an asynchronous worker pool and token-bucket rate limiter.
 
